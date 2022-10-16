@@ -5,6 +5,39 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
         <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container div{
+                border: 2px solid;
+            }
+
+            .boxes {
+                order:3;
+            }
+
+            .boxes2 {
+                order:2;
+            }
+
+            .boxes3 {
+                order:1;
+            }
+
+            @media (min-width: 40rem) {
+                div {
+                    background: blue;
+                }
+            }
+
+            @media (max-width: 100rem) {
+                div {
+                    background: white;
+                }
+            }
             body {
                 font-family: 'Caveat', cursive;
             }
@@ -24,7 +57,9 @@
             </nav>
         </header>
         <main>
+            <div>
             <h1>Pratyush's Meeting Minutes</h1>
+            </div>
             <section>
                 <h2>Team introduction</h2>
                 <p>
@@ -45,6 +80,17 @@
                     Also want to work on the back-end first and make the back-end <strong>quite robust</strong>. Select such a
                     project that makes it easier to do this.
                 </p>
+                <div class="container">
+                    <div class="boxes">
+                        <h4>Testing Flexbox 1</h4>
+                    </div>
+                    <div class="boxes2">
+                        <h4>Testing Flexbox 2</h4>
+                    </div>
+                    <div class="boxes3">
+                        <h4>Testing Flexbox 3</h4>
+                    </div>
+                </div>
             </section>
             <section>
                 <h2>Final thoughts</h2>
