@@ -6,6 +6,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
         <style>
 
+            .last {
+                color: #ffff00;
+            }
+
+            .intro {
+                color: rgb(255, 0, 255);
+            }
+
+            .middle {
+                color: hsl(0, 100%, 50%);
+            }
 
             .defButton:hover {
                 background-color:black;
@@ -26,6 +37,7 @@
             }
 
             .boxes {
+                display: inline;
                 height: 100px;
                 width: 80px;
                 position: static;
@@ -33,24 +45,26 @@
             }
 
             .boxes2 {
+                display: inline-block;
                 position: sticky;
-                top: 20px;
+                top: 20em;
                 order:2;
             }
 
             .boxes3 {
+                display: block;
                 position: static;
                 order:1;
             }
 
-            @media (min-width: 40rem) {
-                div {
+            @media (min-width: 10vw) {
+                div title {
                     background: blue;
                 }
             }
 
-            @media (max-width: 100rem) {
-                div {
+            @media (max-width: 100em) {
+                div title {
                     background: white;
                 }
             }
@@ -73,38 +87,47 @@
             </nav>
         </header>
         <main>
-            <div>
+            <div class="title">
             <h1>Pratyush's Meeting Minutes</h1>
             </div>
             <section>
                 <h2>Team introduction</h2>
-                <p>
+                <div class="intro">
+                <p style="color:orange">
                     We started of the meeting with introductions of the team members that included<br>
                     the lead and then the other 4 members. All of them are majoring in <b>Computer Science</b><br>
                     and are currently in their <b><i>third-year</i> of undergraduate study</b>.
                 </p>
+                </div>
             </section>
             <section>
                 <h2>Initial thoughts on Main Project</h2>
                 <h3>Team lead's thoughts</h3>
+                <div class="middle">
                 <p>
                     Try to make the project <strong>simple and not very complicated</strong>. We want to work on not many<br>
                     features but make sure that each feature is <em>well-developed and flushed out nicely</em>.
                 </p>
+                </div>
                 <h3>Other thoughts</h3>
+                <div class="last">
                 <p>
                     Also want to work on the back-end first and make the back-end <strong>quite robust</strong>. Select such a
                     project that makes it easier to do this.
                 </p>
+                </div>
                 <div class="container">
                     <div class="boxes">
                         <h4>Testing Flexbox 1</h4>
+                        <p>Hello</p>
                     </div>
                     <div class="boxes2">
                         <h4>Testing Flexbox 2</h4>
+                        <p>Hello</p>
                     </div>
                     <div class="boxes3">
                         <h4>Testing Flexbox 3</h4>
+                        <p>Hello</p>
                     </div>
                 </div>
             </section>
