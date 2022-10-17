@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
         <style>
 
+
             .defButton:hover {
                 background-color:black;
             }
@@ -13,7 +14,7 @@
             .defButton:active {
                 background-color:aqua;
             }
-            
+
             .container {
                 display: flex;
                 flex-direction: column;
@@ -25,14 +26,20 @@
             }
 
             .boxes {
+                height: 100px;
+                width: 80px;
+                position: static;
                 order:3;
             }
 
             .boxes2 {
+                position: sticky;
+                top: 20px;
                 order:2;
             }
 
             .boxes3 {
+                position: static;
                 order:1;
             }
 
