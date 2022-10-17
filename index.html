@@ -5,6 +5,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
         <style>
+
+            .defButton:hover {
+                background-color:black;
+            }
+
+            .defButton:active {
+                background-color:aqua;
+            }
+            
             .container {
                 display: flex;
                 flex-direction: column;
@@ -135,7 +144,7 @@
                     <option value="CSE 105">CSE 105</option>
                     <option value="CSE 110">CSE 110</option>
                 </select>
-                <button type="button">
+                <button class="defButton" type="button">
                     Add to list
                 </button>
             </form>
