@@ -6,7 +6,35 @@
         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
         <style>
 
-            .last {
+            h1, h3 {
+                height: 5em;
+            }
+
+            body li {
+                list-style-type: circle;
+            }
+
+            ul > li {
+                background-color: khaki;
+            }
+
+            ol ~ details {
+                color: darkred;
+            }
+
+            h2 + div {
+                background-color: blanchedalmond;
+            }
+
+            h2 {
+                color: darkblue;
+            }
+
+            a[href$=".edu"] {
+                color: pink;
+            }
+            
+            #last {
                 color: #ffff00;
             }
 
@@ -18,6 +46,15 @@
                 color: hsl(0, 100%, 50%);
             }
 
+            .box {
+                border-color: black;
+                border-style: dotted;
+                border-width: 5px;
+                border-radius: 10px;
+                background-color: green;
+                margin-top: 50px;
+                padding-left: 50px;
+            }
             .defButton:hover {
                 background-color:black;
             }
@@ -68,7 +105,7 @@
                     background: white;
                 }
             }
-            body {
+            * {
                 font-family: 'Caveat', cursive;
             }
         </style>
@@ -110,7 +147,7 @@
                 </p>
                 </div>
                 <h3>Other thoughts</h3>
-                <div class="last">
+                <div id="last">
                 <p>
                     Also want to work on the back-end first and make the back-end <strong>quite robust</strong>. Select such a
                     project that makes it easier to do this.
@@ -132,6 +169,7 @@
                 </div>
             </section>
             <section>
+                <div class="box">
                 <h2>Final thoughts</h2>
                 <p>We also tried to come up with a weekly deadline that would help us keep in track of the project and how we are doing<br>
                 so far. Some of the dates are as follows:- 
@@ -145,6 +183,7 @@
                     These are the times when all the group members are free
                 </details>
                 </p>
+                </div>
             </section>
             <hr>
             <img src="http://www.sysnet.ucsd.edu/~voelker/pubcom/logo/CSELogo_4Cv.jpg" alt="UCSD CSE image">
