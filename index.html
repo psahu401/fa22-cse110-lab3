@@ -5,39 +5,49 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
         <style>
-
+            /*This is for headings together*/
             h1, h3 {
                 height: 5em;
             }
 
+            /*Make the bullet point circles for li in body*/
             body li {
                 list-style-type: circle;
             }
 
+            /*For list elements in unordered list, set background*/
             ul > li {
                 background-color: khaki;
             }
 
+            /*For the details after ordered list, set color*/
             ol ~ details {
                 color: darkred;
             }
 
+            /*For the divs after headers, set background*/
             h2 + div {
                 background-color: blanchedalmond;
             }
 
+            /*Set color and text decoration for specific header size*/
             h2 {
                 color: darkblue;
+                text-decoration: dotted;
+                text-align: center;
             }
 
+            /*Make UCSD link pink*/
             a[href$=".edu"] {
                 color: pink;
             }
-            
+
+            /*To set color using id*/
             #last {
                 color: #ffff00;
             }
 
+            /*Setting color in various ways*/
             .intro {
                 color: rgb(255, 0, 255);
             }
@@ -46,6 +56,7 @@
                 color: hsl(0, 100%, 50%);
             }
 
+            /*Formatting box*/
             .box {
                 border-color: black;
                 border-style: dotted;
@@ -55,6 +66,8 @@
                 margin-top: 50px;
                 padding-left: 50px;
             }
+
+            /*For pseudo-classes, specifically hover and active for the button*/
             .defButton:hover {
                 background-color:black;
             }
@@ -63,6 +76,7 @@
                 background-color:aqua;
             }
 
+            /*Next containers and boxes are for Flexbox, and also to show display and units (absolute and relative)*/
             .container {
                 display: flex;
                 flex-direction: column;
@@ -94,15 +108,16 @@
                 order:1;
             }
 
+            /*The media queries which result in change of color*/
             @media (min-width: 10vw) {
-                div title {
-                    background: blue;
+                div {
+                    background-color: blue;
                 }
             }
 
             @media (max-width: 100em) {
-                div title {
-                    background: white;
+                div {
+                    background-color: white;
                 }
             }
             * {
